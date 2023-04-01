@@ -2,6 +2,8 @@ import backend from "./backend.png";
 import close from "./close.svg";
 import creator from "./creator.png";
 import github from "./github.png";
+import instagram from "./instagram.png";
+import linkedin from "./linkedin.png";
 import logo from "./logo.svg";
 import menu from "./menu.svg";
 import mobile from "./mobile.png";
@@ -54,6 +56,8 @@ export {
   mobile,
   web,
   github,
+  instagram,
+  linkedin,
   menu,
   close,
   android,

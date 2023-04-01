@@ -9,11 +9,13 @@ import {
   expired,
   figma,
   git,
+  github,
   html,
   java,
   javascript,
   jumbo,
   jumboapp,
+  linkedin,
   luna,
   mobile,
   nodejs,
@@ -296,4 +298,25 @@ const hobbies = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, hobbies };
+const socials = [
+  {
+    title: "linkedin",
+    image: linkedin,
+    url: "https://it.linkedin.com/in/milos-ribera-8b307587",
+  },
+  {
+    title: "github",
+    image: github,
+    url: "https://github.com/Emme90",
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  hobbies,
+  socials,
+};
