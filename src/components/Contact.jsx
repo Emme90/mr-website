@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 
+import emailjs from "@emailjs/browser";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../style";
 import { slideIn } from "../utils/motion";
@@ -11,9 +12,48 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_noa63tl",
+        "template_ht2ebky",
+        {
+          from_name: form.name,
+          from_email: form.email,
+          to_name: "Milos",
+          to_email: "milos.ribera@gmail.com",
+          message: form.message,
+        },
+        "kYDxMLw2KJLQSn8eE"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert(
+            "Thank you for your message! I'll be back to you as soon as possible!"
+          );
+
+          setForm({
+            email: "",
+            message: "",
+            name: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("Something went wrong! Please retry again");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
