@@ -1,13 +1,11 @@
 import React from "react";
-import { styles } from "../style";
+import pagkJson from "../../package.json";
 import { navLinks, socials } from "../constants/index";
-import { github } from "../assets";
+import { styles } from "../style";
 
 const Footer = () => {
   return (
-    <footer
-      className={`${styles.paddingX} w-full flex items-center py-10 top-0 z-20 bg-primary`}
-    >
+    <footer className={`${styles.paddingX} pt-10 pb-4 bg-primary`}>
       <div className="w-full flex justify-between items-start max-w-2xl mx-auto">
         <div className="flex-col flex gap-2 justify-between">
           <h3 className="text-white text-[24px] font-bold uppercase">
@@ -46,8 +44,22 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <div className="w-full flex flex-col justify-center mt-6 items-center">
+        <span className="text-white text-[16px] font-bold">
+          powered by me with &hearts;
+        </span>
+        <span className="text-white text-[12px] font-bold">
+          v. {pagkJson.version}
+        </span>
+      </div>
     </footer>
   );
 };
+
+{
+  /* <div className="w-full">
+  <span className="text-white">DIAHANE</span>
+</div>; */
+}
 
 export default Footer;
