@@ -1,7 +1,6 @@
 import {
   android,
   angular,
-  backend,
   basket,
   cooking,
   craon,
@@ -57,10 +56,10 @@ const services = [
     title: "React Native Developer",
     icon: mobile,
   },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
+  // {
+  //   title: "Backend Developer",
+  //   icon: backend,
+  // },
   // {
   //   title: "Content Creator",
   //   icon: creator,

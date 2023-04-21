@@ -1,7 +1,7 @@
 import About from "./About";
 import {
-  BallCanvas,
-  ComputersCanvas,
+  // BallCanvas,
+  // ComputersCanvas,
   EarthCanvas,
   StarsCanvas,
 } from "./canvas";
@@ -26,8 +26,8 @@ export {
   Contact,
   Hobbies,
   EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
+  // BallCanvas,
+  // ComputersCanvas,
   StarsCanvas,
   Footer,
 };
