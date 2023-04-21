@@ -3,7 +3,7 @@ import React from "react";
 import { hobbies } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../style";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 
 const HobbyCard = ({ title, description, image, index }) => {
   return (
@@ -27,7 +27,7 @@ const HobbyCard = ({ title, description, image, index }) => {
 
 const Hobbies = () => {
   return (
-    <div className="mt-12 bg-black-100 roundeed-[20px]">
+    <div className="mt-12 bg-black-100 rounded-[20px]">
       <div
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
@@ -38,7 +38,11 @@ const Hobbies = () => {
       </div>
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
         {hobbies.map((hobby, index) => (
-          <HobbyCard key={`testimonial-${index}`} {...hobby} index={index} />
+          <motion.div key={`testimonial-${index}`} variants={zoomIn()}>
+            <div className="hover:scale-110">
+              <HobbyCard {...hobby} index={index} />
+            </div>
+          </motion.div>
         ))}
       </div>
     </div>
