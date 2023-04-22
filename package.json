@@ -2,11 +2,11 @@
   "name": "mr-website",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://emme90.github.io/mr-website",
+  "homepage": "https://emme90.github.io/mr-website/",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
+    "predeploy": "vite build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
