@@ -1,4 +1,5 @@
 import About from "./About";
+import { StarsCanvas } from "./canvas";
 import Contact from "./Contact";
 import Experience from "./Experience";
 import Feedbacks from "./Feedbacks";
@@ -19,5 +20,6 @@ export {
   Feedbacks,
   Contact,
   Hobbies,
+  StarsCanvas,
   Footer,
 };
