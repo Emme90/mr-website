@@ -8,6 +8,7 @@ import {
   Hero,
   Hobbies,
   Navbar,
+  StarsCanvas,
   Tech,
   Works,
 } from "./components";
@@ -15,9 +16,12 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 ">
-        <Navbar />
-        <Hero />
+      <div className="relative z-0 bg-primary">
+        <StarsCanvas />
+        <div className="relative">
+          <Navbar />
+          <Hero />
+        </div>
         <About />
         <Experience />
         <Tech />
