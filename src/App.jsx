@@ -17,7 +17,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <StarsCanvas />
+        <div className="max-md:invisible">
+          <StarsCanvas />
+        </div>
         <div className="relative">
           <Navbar />
           <Hero />
