@@ -12,6 +12,8 @@ import web from "./web.png";
 import android from "./tech/android.png";
 import angular from "./tech/angular.png";
 import css from "./tech/css.png";
+import database from "./tech/database.png";
+import docker from "./tech/docker.webp";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -26,6 +28,7 @@ import craon from "./company/craon.png";
 import jumbo from "./company/jumbo.png";
 import luna from "./company/luna.jpeg";
 import reply from "./company/reply.png";
+import sky from "./company/sky.png";
 import ubi from "./company/ubi.png";
 
 import expired from "./expired.png";
@@ -39,39 +42,42 @@ import snowboard from "./hobbies/snowboard.jpg";
 import video_games from "./hobbies/video_games.jpg";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  instagram,
-  linkedin,
-  menu,
-  close,
   android,
   angular,
+  backend,
+  basket,
+  close,
+  cooking,
+  craon,
+  creator,
   css,
+  database,
+  docker,
+  expired,
   figma,
   git,
+  github,
   html,
+  instagram,
   java,
   javascript,
+  jumbo,
+  jumboapp,
+  linkedin,
+  logo,
+  luna,
+  menu,
+  mobile,
   nodejs,
   reactjs,
   redux,
+  reply,
+  rugby,
+  sky,
+  snowboard,
   typescript,
   ubi,
-  jumbo,
-  luna,
-  craon,
-  reply,
   uigp,
-  jumboapp,
-  expired,
-  rugby,
-  snowboard,
-  basket,
-  cooking,
   video_games,
+  web,
 };

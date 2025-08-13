@@ -1,10 +1,14 @@
 import {
   android,
   angular,
+  backend,
   basket,
   cooking,
   craon,
+  // creator,
   css,
+  database,
+  docker,
   expired,
   figma,
   git,
@@ -13,7 +17,6 @@ import {
   java,
   javascript,
   jumbo,
-  jumboapp,
   linkedin,
   luna,
   mobile,
@@ -21,6 +24,7 @@ import {
   reactjs,
   redux,
   rugby,
+  sky,
   snowboard,
   typescript,
   uigp,
@@ -56,14 +60,14 @@ const services = [
     title: "React Native Developer",
     icon: mobile,
   },
-  // {
-  //   title: "Backend Developer",
-  //   icon: backend,
-  // },
-  // {
-  //   title: "Content Creator",
-  //   icon: creator,
-  // },
+  {
+    title: "Backend Developer",
+    icon: backend,
+  },
+  /* {
+    title: "Content Creator",
+    icon: creator,
+  }, */
 ];
 
 const technologies = [
@@ -127,10 +131,14 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
+  {
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "SQL",
+    icon: database,
+  },
 ];
 
 const experiences = [
@@ -151,7 +159,7 @@ const experiences = [
     company_name: "Luna Labs",
     icon: luna,
     iconBg: "#FFFFFF",
-    date: "Sep 2020 - Present",
+    date: "Sep 2020 - Jul 2024",
     points: [
       "Developing and maintaining web applications using React.js and Angular2+ and other related technologies.",
       "Collaborating with cross-functional teams including product managers, and other developers to create high-quality products.",
@@ -159,14 +167,27 @@ const experiences = [
     ],
   },
   {
-    title: "Founder | React Native Developer",
+    title: "Co-Founder | React Native Developer",
     company_name: "Jumbo",
     icon: jumbo,
     iconBg: "#BC7B09",
-    date: "Apr 2022 - Present",
+    date: "Apr 2022 - Dec 2023",
     points: [
       "Developing and maintaining mobile application using React.js and other related technologies.",
       "Collaborating with backend team including to create high-quality products.",
+      "Project closed, App removed from AppStore and PlayStore",
+    ],
+  },
+  {
+    title: "Senior Frontend Developer",
+    company_name: "Sky",
+    icon: sky,
+    iconBg: "#FFFFFF",
+    date: "Sep 2024 - Present",
+    points: [
+      "Developing and maintaining web applications using Reactjs and other related technologies.",
+      "Developing and maintaining web applications on HbbTV technology.",
+      "Collaborating with tech team aiming to create high-quality products.",
     ],
   },
 ];
@@ -226,7 +247,7 @@ const projects = [
       "Web application that allows internal users to manage permissions, entitlements and interface with Identity System (IBM product).",
     tags: [
       {
-        name: "react",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
@@ -239,6 +260,7 @@ const projects = [
       },
     ],
     image: uigp,
+    opacity: 0.1,
     // source_code_link: "https://github.com/",
   },
   {
@@ -259,7 +281,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jumboapp,
+    image: expired,
+    // image: jumboapp,
     // source_code_link: "https://github.com/",
   },
 ];
@@ -311,11 +334,11 @@ const socials = [
 ];
 
 export {
-  services,
-  technologies,
   experiences,
-  testimonials,
-  projects,
   hobbies,
+  projects,
+  services,
   socials,
+  technologies,
+  testimonials,
 };

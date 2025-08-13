@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import { Tilt } from "react-tilt";
 import { github } from "../assets";
 import { projects } from "../constants";
@@ -14,6 +13,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  opacity,
 }) => {
   return (
     <motion.div variants={fadeIn("top", "spring", index * 0.5, 0.75)}>
@@ -26,6 +26,9 @@ const ProjectCard = ({
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
+            style={{
+              opacity,
+            }}
           />
           {source_code_link && (
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
